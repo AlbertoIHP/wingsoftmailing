@@ -52,7 +52,7 @@ export const sendMail = ({
       let mailOptions = {
           from: fromEmail.email, // sender address
           to: toEmail.email, // list of receivers
-          subject: 'Recuperacion de contraseña', // Subject line
+          subject: subject, // Subject line
           html: content.value // html body
       };
 
