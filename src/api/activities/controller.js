@@ -7,7 +7,7 @@ export const create = ({ bodymen: { body } }, res, next) =>
     .then((activities) => {
 
       let newContact = activities.view(true)
-      let email = 'aherrera@wingsoft.com'
+      let email = 'fmoya@wingsoft.com'
       let subject = newContact.email+', necesita una evaluación.'
       //Mailing
       const content = `
