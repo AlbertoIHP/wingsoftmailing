@@ -9,7 +9,7 @@ export const create = ({ bodymen: { body } }, res, next) =>
       let newContact = activities.view(true)
       let topic = newContact.topic === 1 ? 'Growth Hacking' : 'Desarrollo Mobil'
 
-      let email = 'fmoya@wingsoft.com'
+      let email = 'jgonzalez@wingsoft.com'
       let subject = topic+':  '+newContact.email+', necesita una evaluación.'
       //Mailing
       const content = `
