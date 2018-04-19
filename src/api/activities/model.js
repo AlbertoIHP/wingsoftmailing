@@ -20,6 +20,11 @@ const activitiesSchema = new Schema({
     type: String,
     required: true
   },
+  topic:
+  {
+    type: String,
+    required: true
+  }
 }, {
   timestamps: true,
   toJSON: {
@@ -37,6 +42,7 @@ activitiesSchema.methods = {
       bussinessName: this.bussinessName,
       bussinessArea: this.bussinessArea,
       email: this.email,
+      topic: this.topic,
       createdAt: this.createdAt,
     }
 

@@ -7,11 +7,13 @@ export const create = ({ bodymen: { body } }, res, next) =>
     .then((activities) => {
 
       let newContact = activities.view(true)
+      let topic = newContact.topic === 1 ? 'Growth Hacking' : 'Desarrollo Mobil'
+
       let email = 'fmoya@wingsoft.com'
-      let subject = newContact.email+', necesita una evaluación.'
+      let subject = topic+':  '+newContact.email+', necesita una evaluación.'
       //Mailing
       const content = `
-        Hola soy ${newContact.name}.<br><br>
+        Hola soy ${newContact.name}, vi la pagina de ${topic}.<br><br>
         Estoy interesado en obtener una evaluación para la compañia ${newContact.bussinessName}, en la seccion de ${newContact.bussinessArea}. <br>
         Mi correo es ${newContact.email}, para que puedas ponerte en contacto cuanto antes conmigo.<br><br>`
 

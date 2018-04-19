@@ -7,7 +7,7 @@ import { schema } from './model'
 export Activities, { schema } from './model'
 
 const router = new Router()
-const { name, bussinessName, bussinessArea, email } = schema.tree
+const { name, bussinessName, bussinessArea, email, topic } = schema.tree
 
 /**
  * @api {post} /activities Create activities
@@ -25,7 +25,7 @@ const { name, bussinessName, bussinessArea, email } = schema.tree
  * @apiError 401 master access only.
  */
 router.post('/',
-  body({ name, bussinessName, bussinessArea, email }),
+  body({ name, bussinessName, bussinessArea, email, topic }),
   create)
 
 /**
@@ -74,7 +74,7 @@ router.get('/:id',
  */
 router.put('/:id',
   token({ required: false}),
-  body({ name, bussinessName, bussinessArea, email }),
+  body({ name, bussinessName, bussinessArea, email, topic }),
   update)
 
 /**
