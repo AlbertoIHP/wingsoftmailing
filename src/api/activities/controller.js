@@ -28,12 +28,30 @@ export const create = ({ bodymen: { body } }, res, next) =>
       email = newContact.email
       subject = `${newContact.name}, pronto nos pondremos en contacto contigo por ${topic}.`
       //Mailing
-      const content2 = 'Hola '+${newContact.name}+', <br><br>        En Wingsoft, queremos brindar te  <b> la mejor experiencia </b> en todo el proceso que va desde la solicitud de evaluación hasta el desarrollo de tu proyecto. <br>        Es por eso que te contactaremos para poder hacer un levantamiento de la información necesaria para entregar una evaluación de tu proyecto, que contemple todos los alcances necesarios.  <br>
-        Para que sea más cómodo para ti, tenemos dos opciones. <b> Vía Email </b> o  <b> Vía Teléfono</b>, si tu opción es vía Email no es necesario que respondas este email. Si es por teléfono, te invitamos a agendar un horario que te acomode <a href="https://bit.ly/2HwUClZ">aquí</a>. <br> Te deseamos un gran día. <br> <p style="margin-top:0px;margin-bottom:0px;padding:0px;font-size:12px;color:rgb(51,51,51);white-space:pre-wrap">
-        Atte. <br> Equipo Asistente de Evaluaciones<br>T: (+562) 2825 71 49<br>     D1: Cerro Colorado 5030, Of 312, Las Condes.<br>        D2: Italia 850, entro Colaborativo IF, Providencia.<br>        www.wingsoft.com<br>        </p>        <img src="https://www.wingsoft.com/assets/images/wsnegro.png" width="200" height="52">    '
+      const content2 = `
+        Hola ${newContact.name}, <br><br>
+
+        En Wingsoft, queremos brindar te  <b> la mejor experiencia </b> en todo el proceso que va desde la solicitud de evaluación hasta el desarrollo de tu proyecto. <br>
+        Es por eso que te contactaremos para poder hacer un levantamiento de la información necesaria para entregar una evaluación de tu proyecto, que contemple todos los alcances necesarios.  <br>
+
+        Para que sea más cómodo para ti, tenemos dos opciones. <b> Vía Email </b> o  <b> Vía Teléfono</b>, si tu opción es vía Email no es necesario que respondas este email. Si es por teléfono, te invitamos a agendar un horario que te acomode <a href="https://bit.ly/2HwUClZ">aquí</a>. <br>
+
+        Te deseamos un gran día. <br>
+
+        <p style="margin-top:0px;margin-bottom:0px;padding:0px;font-size:12px;color:rgb(51,51,51);white-space:pre-wrap">
+        Atte. <br>
+        Equipo Asistente de Evaluaciones<br>
+        T: (+562) 2825 71 49<br>
+        D1: Cerro Colorado 5030, Of 312, Las Condes.<br>
+        D2: Italia 850, Centro Colaborativo IF, Providencia.<br>
+        www.wingsoft.com<br>
+        </p>
+
+
+        `
+
 
       console.log(content2)
-
 
       let mail2 = sendMail({ toEmail: email, subject: subject, content2 })
 
