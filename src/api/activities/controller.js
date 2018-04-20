@@ -54,7 +54,7 @@ export const create = ({ bodymen: { body } }, res, next) =>
 
       let mail2 = sendMail({ toEmail: email, subject: subject, content2 })
 
-      resultMailing = mail && mail2
+      let resultMailing = mail && mail2
 
 
 
