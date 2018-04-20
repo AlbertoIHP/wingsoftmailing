@@ -47,13 +47,16 @@ export const create = ({ bodymen: { body } }, res, next) =>
         www.wingsoft.com<br>
         </p>
 
-
+        <img src="https://www.wingsoft.com/assets/images/wsnegro.png" width="200" height="52">
+        <font color="#666666" size="1" style="font-family:arial,sans-serif;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255);text-decoration-style:initial;text-decoration-color:initial">------------------------------<wbr>------------------------------<wbr>-----<br>Aviso de Confidencialidad: Este correo electrónico y/o el material adjunto es para uso exclusivo del emisor y la persona o entidad a la que expresamente se le ha enviado, y puede contener información confidencial o material privilegiado. Si usted no es el destinatario legítimo del mismo, por favor repórtelo inmediatamente al remitente del correo y bórrelo.<br><br>Cualquier revisión, retransmisión, difusión o cualquier otro uso de este correo, por personas o entidades distintas a las del destinatario legítimo, queda expresamente prohibido. Este correo electrónico no pretende ni debe ser considerado como constitutivo de ninguna relación legal, contractual o de otra índole similar.<br>------------------------------<wbr>------------------------------<wbr>------<br>Notice of Confidentiality: The information transmitted is intended only for the sender and person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, e-transmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited.<br><br>If you received this in error, please contact the sender immediately by return electronic transmission and then immediately delete this transmission, including all attachments, without copying, distributing or disclosing same.</font>
         `
+
 
 
       console.log(content2)
 
-      let mail2 = sendMail({ toEmail: email, subject: subject, content2 })
+
+      let mail2 = sendMail({ toEmail: email, subject: subject, content })
 
       let resultMailing = mail && mail2
 
