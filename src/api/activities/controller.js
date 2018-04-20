@@ -25,8 +25,8 @@ export const create = ({ bodymen: { body } }, res, next) =>
 
       // Mail for contact
       topic = newContact.topic === '1' ? 'Growth Hacking' : 'Desarrollo Mobil'
-      email = 'hola@wingsoft.com'
-      subject = `${newContact.name}, pronto nos pondremos en contacto contigo.`
+      email = newContact.email
+      subject = `${newContact.name}, pronto nos pondremos en contacto contigo por ${topic}.`
       //Mailing
       const content2 = `
         Hola ${newContact.name}, <br><br>
