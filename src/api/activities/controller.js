@@ -19,7 +19,7 @@ export const create = ({ bodymen: { body } }, res, next) =>
         Estoy interesado en obtener una evaluación para la compañia ${newContact.bussinessName}, en la seccion de ${newContact.bussinessArea}. <br>
         Mi correo es ${newContact.email}, para que puedas ponerte en contacto cuanto antes conmigo.<br><br>`
 
-      let mail = sendMail({ toEmail: email, subject: subject, content })
+      let mail = sendMail({ toEmail: email, subject: subject, content: content })
 
 
 
@@ -56,7 +56,7 @@ export const create = ({ bodymen: { body } }, res, next) =>
       console.log(content2)
 
 
-      let mail2 = sendMail({ toEmail: email, subject: subject, content })
+      let mail2 = sendMail({ toEmail: email, subject: subject, content: content2 })
 
       let resultMailing = mail && mail2
 
