@@ -17,7 +17,7 @@ export const create = ({ bodymen: { body } }, res, next) =>
       const content = `
         Hola soy ${newContact.name}, vi la pagina de ${topic}.<br><br>
         Estoy interesado en obtener una evaluación para la compañia ${newContact.bussinessName}, en la seccion de ${newContact.bussinessArea}. <br>
-        Mi correo es ${newContact.email}, para que puedas ponerte en contacto cuanto antes conmigo.<br><br>`
+        Mi correo es ${newContact.email}, y mi numero ${newContact.phone} para que puedas ponerte en contacto cuanto antes conmigo.<br><br>`
 
       email = 'fmoya@wingsoft.com'
 

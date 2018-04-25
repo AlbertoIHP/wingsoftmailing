@@ -24,6 +24,11 @@ const activitiesSchema = new Schema({
   {
     type: String,
     required: true
+  },
+  phone:
+  {
+    type: String,
+    required: true
   }
 }, {
   timestamps: true,
@@ -43,6 +48,7 @@ activitiesSchema.methods = {
       bussinessArea: this.bussinessArea,
       email: this.email,
       topic: this.topic,
+      phone: this.phone,
       createdAt: this.createdAt,
     }
 
