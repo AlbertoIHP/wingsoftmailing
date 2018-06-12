@@ -32,20 +32,408 @@ export const create = ({ bodymen: { body } }, res, next) =>
       subject = `${newContact.name}, pronto nos pondremos en contacto contigo por ${topic}.`
       //Mailing
       const content2 = `
-        Hola ${newContact.name}, <br><br>
-
-        En Wingsoft, queremos brindarte  <b> la mejor experiencia </b> en todo el proceso que va desde la solicitud de evaluación hasta el desarrollo de tu proyecto. <br><br>
-
-        Es por eso que te contactaremos para poder hacer un levantamiento de la información necesaria para entregar una evaluación de tu proyecto, que contemple todos los alcances necesarios.  <br><br>
+<html lang="en">
+<head>
 
 
-        Para que sea más cómodo para ti, tenemos dos opciones. <b> Vía Email </b> o  <b> Vía Teléfono</b>, si tu opción es vía Email no es necesario que respondas este email. Si es por teléfono, te invitamos a agendar un horario que te acomode <a href="https://bit.ly/2HwUClZ">aquí</a>. <br><br>
 
-        Te deseamos un gran día. <br><br>
+  <style type="text/css">
 
-<div><br><div style="color:rgb(80,0,80);font-family:arial,sans-serif;font-size:small;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255);text-decoration-style:initial;text-decoration-color:initial"><pre style="margin-top:0px;margin-bottom:0px;padding:0px;font-size:12px;color:rgb(51,51,51);white-space:pre-wrap">Atte.<br>Equipo Asistente de Evaluaciones<br></pre><span><pre style="margin-top:0px;margin-bottom:0px;padding:0px;font-size:12px;color:rgb(51,51,51);white-space:pre-wrap">T: (+562) 2825 71 49<br></pre></span><span><pre style="color:rgb(34,34,34);margin-top:0px;margin-bottom:0px;padding:0px;font-size:12px;white-space:pre-wrap"><font color="#333333">D1: <a href="https://maps.google.com/?q=Cerro+Colorado+5030,+Of+312,+Las+Condes&amp;entry=gmail&amp;source=g" style="color:rgb(17,85,204)" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=es&amp;q=https://maps.google.com/?q%3DCerro%2BColorado%2B5030,%2BOf%2B312,%2BLas%2BCondes%26entry%3Dgmail%26source%3Dg&amp;source=gmail&amp;ust=1524341245227000&amp;usg=AFQjCNHq4pqR7ty_pILHzZIlqYjKjJhrpg">Cerro Colorado 5030, Of 312, Las Condes</a>.</font></pre><pre style="color:rgb(34,34,34);margin-top:0px;margin-bottom:0px;padding:0px;font-size:12px;white-space:pre-wrap"><font color="#333333">D2: Italia 850, Centro Colaborativo IF, Providencia.
-</font><font style="color:rgb(17,85,204)"><a href="http://www.wingzoft.com/" style="color:rgb(17,85,204)" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=es&amp;q=http://www.wingzoft.com/&amp;source=gmail&amp;ust=1524341245227000&amp;usg=AFQjCNEhVj1GMl-i97hk7KJWEOK58K3j1w">www.wingsoft.com</a></font></pre><pre style="color:rgb(34,34,34);margin-top:0px;margin-bottom:0px;padding:0px;font-size:12px;white-space:pre-wrap"><br></pre><pre style="color:rgb(34,34,34);margin-top:0px;margin-bottom:0px;padding:0px;font-size:12px;white-space:pre-wrap"><img src="https://ci4.googleusercontent.com/proxy/fL7IX0kfyNwPLnpxB8Y3MnIcz0k0yE0PxliCYWhgYTxUrsgmGKdv86bvC9x-1_Y5VP0h8e0cU5CRd1CGtZoO3ccbmKaFuMitZGTCQjx9WWPp0xsIuY8lq3IhlwJFBrjSUWFN6RpnVk2dAQ9zyOQOBqi3gM2U8rkRxo8rFPG1_mrx3jKXBXChFPPOwGwa3VRiqgeNP0lM7sB-lZ7FamuJHA=s0-d-e1-ft#https://docs.google.com/uc?export=download&amp;id=19TDh4RtRklKNUbEUEx8DRDMMRNJSaG_r&amp;revid=0B0ApdjdVdJXjblVEMFNXdzJmbk9oY0ZYZUFWYzBoWHltVGhRPQ" width="200" height="52" class="CToWUd"><br></pre><pre style="color:rgb(34,34,34);margin-top:0px;margin-bottom:0px;padding:0px;font-size:12px;white-space:pre-wrap"></pre></span></div><span><font color="#666666" size="1" style="font-family:arial,sans-serif;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255);text-decoration-style:initial;text-decoration-color:initial">------------------------------<wbr>------------------------------<wbr>-----<br>Aviso de Confidencialidad: Este correo electrónico y/o el material adjunto es para uso exclusivo del emisor y la persona o entidad a la que expresamente se le ha enviado, y puede contener información confidencial o material privilegiado. Si usted no es el destinatario legítimo del mismo, por favor repórtelo inmediatamente al remitente del correo y bórrelo.<br><br>Cualquier revisión, retransmisión, difusión o cualquier otro uso de este correo, por personas o entidades distintas a las del destinatario legítimo, queda expresamente prohibido. Este correo electrónico no pretende ni debe ser considerado como constitutivo de ninguna relación legal, contractual o de otra índole similar.<br>------------------------------<wbr>------------------------------<wbr>------<br>Notice of Confidentiality: The information transmitted is intended only for the sender and person or entity to which it is addressed and may contain confidential and/or privileged material. Any review, e-transmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited.<br><br>If you received this in error, please contact the sender immediately by return electronic transmission and then immediately delete this transmission, including all attachments, without copying, distributing or disclosing same.</font><br><br><br><br><br><br></span></div>
-        `
+/* This stylesheet generated by Transfonter (https://transfonter.org) on June 14, 2017 3:05 PM */
+
+@font-face {
+    font-family: 'Open Sans semi bold';
+    src: url('../fonts/OpenSans/OpenSans-Semibold.eot');
+    src: url('../fonts/OpenSans/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans/OpenSans-Semibold.woff') format('woff'),
+        url('../fonts/OpenSans/OpenSans-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans bold italic';
+    src: url('../fonts/OpenSans/OpenSans-BoldItalic.eot');
+    src: url('../fonts/OpenSans/OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans/OpenSans-BoldItalic.woff') format('woff'),
+        url('../fonts/OpenSans/OpenSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans light italic';
+    src: url('../fonts/OpenSans/OpenSansLight-Italic.eot');
+    src: url('../fonts/OpenSans/OpenSansLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans/OpenSansLight-Italic.woff') format('woff'),
+        url('../fonts/OpenSans/OpenSansLight-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans/OpenSans.eot');
+    src: url('../fonts/OpenSans/OpenSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans/OpenSans.woff') format('woff'),
+        url('../fonts/OpenSans/OpenSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans light';
+    src: url('../fonts/OpenSans/OpenSans-Light.eot');
+    src: url('../fonts/OpenSans/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans/OpenSans-Light.woff') format('woff'),
+        url('../fonts/OpenSans/OpenSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans extrabold italic';
+    src: url('../fonts/OpenSans/OpenSans-ExtraboldItalic.eot');
+    src: url('../fonts/OpenSans/OpenSans-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans/OpenSans-ExtraboldItalic.woff') format('woff'),
+        url('../fonts/OpenSans/OpenSans-ExtraboldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans extrabold';
+    src: url('../fonts/OpenSans/OpenSans-Extrabold.eot');
+    src: url('../fonts/OpenSans/OpenSans-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans/OpenSans-Extrabold.woff') format('woff'),
+        url('../fonts/OpenSans/OpenSans-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans semibold italic';
+    src: url('../fonts/OpenSans/OpenSans-SemiboldItalic.eot');
+    src: url('../fonts/OpenSans/OpenSans-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans/OpenSans-SemiboldItalic.woff') format('woff'),
+        url('../fonts/OpenSans/OpenSans-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans italic';
+    src: url('../fonts/OpenSans/OpenSans-Italic.eot');
+    src: url('../fonts/OpenSans/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans/OpenSans-Italic.woff') format('woff'),
+        url('../fonts/OpenSans/OpenSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans bold';
+    src: url('../fonts/OpenSans/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+/*general*/
+*, .project-title{
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  color: #60c99a;
+}
+a:hover{
+  text-decoration: none;
+  color: #60c99a;
+}
+a:focus{
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+  text-transform: inherit;
+}
+h4{
+  letter-spacing: 0px;
+}
+h6{
+  letter-spacing: 0px;
+}
+p{
+  font-size: 16px;
+}
+
+.main-banner{
+  background-image: url(https://s3-sa-east-1.amazonaws.com/picsconectikids/main-banner.png);
+  background-size:cover;
+  background-position: bottom;
+  height: 74vh;
+  width: 100%;
+  position: relative;
+  top: 2em;
+  background-repeat: no-repeat;
+}
+
+.info-section .common-box{
+  padding: 0 17em 4em;
+}
+
+.info-section .common-box h3, .info-section .common-box p, .info-section .common-box a{
+  color: #5E605F;
+}
+
+.info-section .common-box p{
+  white-space: pre-line;
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.info-section .common-box span{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #595B58;
+}
+
+.info-section .common-box__figure img{
+  width: 10em;
+}
+
+.footer-banner{
+  background-image: url(https://s3-sa-east-1.amazonaws.com/picsconectikids/footer-banner.jpg);
+  background-size:cover;
+  background-position: bottom;
+  height: 20vh;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  padding: 80px 0 0;  
+}
+
+.footer-banner .common-box__figure{
+  text-align: center;
+}
+
+.footer-banner .common-box__figure img{
+  width: 13em;
+}
+
+
+@media(max-width: 1366px){
+  .main-banner{
+    height: 48vh;
+  }
+  .footer-banner{
+    height: 24vh;
+  } 
+}
+
+@media (max-width: 1024px){
+  .main-banner{
+    height: 62vh;
+  }
+  .info-section .common-box {
+      padding: 0 10em 4em;
+  }
+  .footer-banner{
+    height: 26vh;
+  }
+}
+
+@media (max-width: 900px){
+  .main-banner{
+    height: 92vh;
+  }
+  .info-section .common-box {
+      padding: 0 2em 4em;
+  }
+  .footer-banner{
+    height: 45vh;
+  }
+}
+
+@media (max-width: 800px){
+  .main-banner {
+      height: 34vh;
+  }
+  .footer-banner{
+    height: 20vh;
+  } 
+}
+
+@media (max-width: 767px){
+  .info-section .common-box{
+    padding: 0 4em 4em;
+  }
+}
+
+@media (max-width: 736px){
+  .main-banner{
+    height: 80vh;
+  }
+  .info-section .common-box {
+      padding: 0 2em 4em;
+  }
+  .footer-banner{
+    height: 45vh;
+  }
+}
+
+@media (max-width: 667px){
+  .info-section .common-box {
+      padding: 0 0 4em;
+  }
+}
+
+@media (max-width: 640px){
+  .info-section .common-box {
+      padding: 0 0 4em;
+  }
+  .footer-banner{
+    height: 48vh;
+  }
+}
+
+@media (max-width: 600px){  
+  .info-section .common-box p {
+      font-size: 21px;
+  }
+  .info-section .common-box__figure img {
+      width: 8em;
+  }
+  .footer-banner{
+    height: 55vh;
+  }
+}
+
+@media (max-width: 450px){
+  .main-banner{
+    height: 23vh;
+    top: 1em;
+  }
+  .info-section .common-box {
+      padding: 0 0 4em;
+  }
+  .info-section .common-box p {
+      font-size: 24px;
+  }
+  .footer-banner{
+    height: 26vh;
+  } 
+}
+
+@media (max-width: 375px){
+  .main-banner {
+      height: 22vh;
+      top: 1em;
+  }
+  .info-section .common-box {
+      padding: 0 0 4em;
+  }
+  .info-section .common-box p{
+    font-size: 21px;
+  }
+  .footer-banner{
+    height: 25vh;
+    padding: 70px 0 0;
+  }
+  .footer-banner .common-box__figure img {
+      width: 11em;
+  }
+}
+
+@media (max-width: 320px){
+  .info-section .common-box h3, .info-section .common-box p{
+    font-size: 19px;
+  }
+  .info-section .common-box__figure img {
+      width: 8em;
+  }
+  .footer-banner .common-box__figure img {
+      width: 10em;
+  }
+}
+
+  </style>
+
+
+</head>
+<body>
+    
+  <header class="main-banner"></header>
+
+  <section class="info-section">
+    <div style=" text-align: center">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="common-box">
+            <h3>¡Hola Bárbara!</h3>
+            <p>
+              En Wingsoft, queremos brindarte <span>la mejor experiencia</span>
+              en todo el proceso que va desde la solicitud de evaluación
+              hasta el desarrolo de tu proyecto.
+
+              Es por eso que te contactaremos para poder hacer un 
+              levantamiento de la información necesaria para entregar
+              una evaluación de tu proyecto, que contemple todos los
+              alcances necesarios.
+
+              Para que sea más cómodo para ti, tenemos dos opciones.
+              Vía Email o Vía Teléfono, si tu opción es vía Email no es
+              necesario que respondas este email. Si es por teléfono, te
+              invitamos a agendar un horario que te acomode aquí:
+              <a href="https://bit.ly/2HwUCIZ">https://bit.ly/2HwUCIZ</a>
+
+              Te deseamos un gran día. 
+            </p>
+          </div>
+          <div class="common-box text-center">
+            <div class="common-box__figure">
+              <figure>
+                <img src="https://s3-sa-east-1.amazonaws.com/picsconectikids/barbara.png" alt="">
+              </figure>
+            </div>
+            <p>Atte Equipo De Experiencia</p>
+            <div class="common-box__figure">
+              <figure>
+                <img src="https://s3-sa-east-1.amazonaws.com/picsconectikids/Layer-6.png" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  <footer class="footer-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <figure class="common-box__figure">
+            <img src="https://s3-sa-east-1.amazonaws.com/picsconectikids/logo-ws.png" alt="">  
+          </figure>
+        </div>
+      </div>
+    </div>
+  </footer>
+        
+  <script src="public/js/jquery-3.1.1.min.js" integrity=""></script>
+  <script src="public/js/bootstrap.min.js" integrity=""></script>
+  <script src="public/js/main.js" integrity=""></script> 
+  <!-- END CHATBOT -->
+</body>
+</html>
+
+      `
 
 
 
