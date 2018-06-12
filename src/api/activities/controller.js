@@ -533,7 +533,7 @@ Para que sea más cómodo para ti, tenemos dos opciones.<br>
 Vía Email o Vía Teléfono, si tu opción es vía Email no es<br>
 necesario que respondas este email. Si es por teléfono, te<br>
 invitamos a agendar un horario que te acomode aquí:<br>
-<a href="https://bit.ly/2HwUCIZ" style="text-decoration: none; color: #5E605F;">https://bit.ly/2HwUCIZ</a><br>
+<a href="https://calendly.com/wingsoft" style="text-decoration: none; color: #5E605F;">https://calendly.com/wingsoft</a><br>
 <br>
 Te deseamos un gran día.</p>
 </div>
