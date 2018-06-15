@@ -48,7 +48,7 @@ const dbDefensa = new Schema({
   }
 })
 
-americaSolidariaSchema.methods = {
+dbDefensa.methods = {
   view (full) {
     const view = {
       // simple view
