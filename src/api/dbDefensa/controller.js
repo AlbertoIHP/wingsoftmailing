@@ -19,15 +19,23 @@ export const create = ({ bodymen: { body } }, res, next) =>
     .catch(next)
 
 export const index = ({ querymen: { query, select, cursor } }, res, next) =>
-  dbDefensa.count(query)
-    .then(count => dbDefensa.find(query, select, cursor)
-      .then((activities) => ({
-        count,
-        rows: activities.map((activities) => activities.view())
-      }))
-    )
-    .then(success(res))
-    .catch(next)
+  dbDefensa.find({})
+  .then((activities) => ({
+      count: activities.length,
+      rows: activities.map((activities) => activities.view())
+    }))
+  .then(success(res))
+  .catch(next)
+
+ // dbDefensa.count(query)
+  //   .then(count => dbDefensa.find(query, select, cursor)
+  //     .then((activities) => ({
+  //       count,
+  //       rows: activities.map((activities) => activities.view())
+  //     }))
+  //   )
+  //   .then(success(res))
+  //   .catch(next)
 
 export const show = ({ params }, res, next) =>
   dbDefensa.findById(params.id)
