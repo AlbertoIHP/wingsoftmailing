@@ -3,6 +3,7 @@ import user from './user'
 import auth from './auth'
 import passwordReset from './password-reset'
 import americaSolidaria from './americaSolidaria'
+import dbDefensa from './dbDefensa'
 
 import activities from './activities'
 
@@ -35,6 +36,9 @@ router.use('/users', user)
 router.use('/auth', auth)
 router.use('/contact', activities)
 router.use('/password-resets', passwordReset)
+
+
+router.use('/db_defensa', dbDefensa)
 
 router.use('/americasolidaria', americaSolidaria)
 router.get('/forgot/:forgottoken', function(request, response, next) {
