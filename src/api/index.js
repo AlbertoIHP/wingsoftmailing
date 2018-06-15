@@ -2,6 +2,7 @@ import { Router } from 'express'
 import user from './user'
 import auth from './auth'
 import passwordReset from './password-reset'
+import americaSolidaria from './americaSolidaria'
 
 import activities from './activities'
 
@@ -35,7 +36,7 @@ router.use('/auth', auth)
 router.use('/contact', activities)
 router.use('/password-resets', passwordReset)
 
-
+router.use('/americasolidaria', americaSolidaria)
 router.get('/forgot/:forgottoken', function(request, response, next) {
 
 	response.render( 'index' )
